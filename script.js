@@ -1,6 +1,6 @@
 document.getElementById('payButton').addEventListener('click', function() {
     // Hacer una solicitud POST a la API de AWS Lambda para crear el pago con PayPal
-    fetch(' https://iogk6qtqg1.execute-api.us-east-2.amazonaws.com/default/pagodepay', {  // Cambia <API_GATEWAY_URL> por la URL de tu API Gateway
+    fetch('https://iogk6qtqg1.execute-api.us-east-2.amazonaws.com/default', {  // Cambia <API_GATEWAY_URL> por la URL de tu API Gateway
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
