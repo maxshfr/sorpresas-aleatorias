@@ -1,38 +1,38 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SorpresaXpress</title>
-    <link rel="stylesheet" href="style.css">
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-YZ0E9H8FQD"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-YZ0E9H8FQD');
-</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>SorpresaXpress</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YZ0E9H8FQD"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-YZ0E9H8FQD');
+  </script>
 </head>
 <body>
-    <div class="titulo">
-        <h1 id="til">¡Compra una sorpresa misteriosa y sorpréndete!</h1>
-    </div>
-    <div class="container">
-        <h1 id="title">¡Paga $5 MXN y recibe una sorpresa aleatoria!</h1>
-        <p>Haz clic en el botón para pagar con PayPal:</p>
-        <a href="https://paypal.me/CastroIniestaIniesta/5" target="_blank">
-            <button id="payButton">Pagar con PayPal</button>
-        </a>
-        <p id="surprise"></p>
-    </div>
+  <div class="titulo">
+    <h1>¡Compra una sorpresa misteriosa y sorpréndete!</h1>
+  </div>
+  <div class="container">
+    <h2>¡Paga $5 MXN y recibe una sorpresa aleatoria!</h2>
+    <p>Haz clic en el botón para pagar con PayPal:</p>
+    <!-- Botón sin <a> directa a PayPal -->
+    <button id="payButton">Pagar con PayPal</button>
 
-    <script src="script.js"></script>
-        <!-- Agregar el pie de página aquí -->
-    <footer>
-        <p>&copy; 2025 SorpresaXpress. Todos los derechos reservados.</p>
-        <p><a href="politicas.html" target="_blank">Política de Privacidad</a></p>
-    </footer>
+    <!-- Aquí aparecerá la sorpresa UNA VEZ confirmado el pago -->
+    <div id="surprise"></div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 SorpresaXpress. Todos los derechos reservados.</p>
+    <p><a href="politicas.html" target="_blank">Política de Privacidad</a></p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
